@@ -1,5 +1,8 @@
 # Process scripts for all seasons
 
+# load packages
+pacman::p_load(pdftools, stringr, dplyr, tidyr)
+
 # read PDFs for season 1 scripts
 e101 <- pdf_text("https://8flix.com/assets/transcripts/s/tt4574334/Stranger-Things-transcript-101-Chapter-One-The-Vanishing-of-Will-Byers.pdf")
 e102 <- pdf_text("https://8flix.com/assets/transcripts/s/tt4574334/Stranger-Things-transcript-102-Chapter-Two-The-Weirdo-on-Maple-Street.pdf")
