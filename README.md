@@ -24,11 +24,11 @@ are included.
 
 ### episodes.csv
 
-| variable              | class     |
-|:----------------------|:----------|
-| season                | integer   |
-| episode               | integer   |
-| title                 | character |
-| directed_by           | character |
-| written_by            | character |
-| original_release_date | character |
+| variable              | class     | description                      |
+|:----------------------|:----------|:---------------------------------|
+| season                | integer   | Season number                    |
+| episode               | integer   | Episode number within the season |
+| title                 | character | Title of the episode             |
+| directed_by           | character | Director(s) of the episode       |
+| written_by            | character | Writer(s) of the episode         |
+| original_release_date | character | Release date of the episode      |
