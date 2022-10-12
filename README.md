@@ -13,14 +13,14 @@ are included.
 
 | variable        | class     | description                                               |
 |:----------------|:----------|:----------------------------------------------------------|
+| season          | integer   | Season number                                             |
+| episode         | integer   | Episode number within the season                          |
 | line            | integer   | Order in which line appears in episode                    |
 | raw_text        | character | Original text with both dialogue and stage directions     |
 | stage_direction | character | Text describing what’s happening, or who is talking       |
 | dialogue        | character | Dialogue spoken within the episode                        |
 | start_time      | character | Time within the episode when the line starts being spoken |
 | end_time        | character | Time within the episode when the line stops being spoken  |
-| episode         | integer   | Episode number within the season                          |
-| season          | integer   | Season number                                             |
 
 ### episodes.csv
 
