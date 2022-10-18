@@ -49,7 +49,7 @@ e409 <- pdf_text("https://8flix.com/assets/transcripts/s/tt4574334/Stranger-Thin
 s1 <- list(e101, e102, e103, e104, e105, e106, e107, e108)
 s2 <- list(e201, e202, e203, e204, e205, e206, e207, e208, e209)
 s3 <- list(e301, e302, e303, e304, e305, e306, e307, e308)
-s4 <- list(e401, e402, e403, e404, e405, e406, e407, e308, e209)
+s4 <- list(e401, e402, e403, e404, e405, e406, e407, e408, e409)
 
 # list of seasons
 seasons <- list(s1, s2, s3, s4)
@@ -68,7 +68,8 @@ for (s in 1:length(seasons)) {
     it$episode <- i
     it$season <- s
     
-    all_dialogue <- rbind(all_dialogue, it)
+    all_dialogue <- rbind(all_dialogue, it)  |>
+      select(season, episode, line, raw_text, stage_direction, dialogue, start_time, end_time)
     
   }
 }

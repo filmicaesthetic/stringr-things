@@ -54,8 +54,7 @@ tidy_script <- function(pdftext) {
               start_time = first(start_time),
               end_time = first(end_time)) |>
     arrange(line) |>
-    filter(!is.na(line)) |>
-    select(season, episode, line, raw_text, stage_direction, dialogue, start_time, end_time)
+    filter(!is.na(line))
   
   return(ep_groupline)
   
